@@ -1,181 +1,62 @@
-
-/* Réinitialisation des styles */
-html, body, header, nav, main, section, footer {
-    margin: 0;
-    padding: 0;
-}
-
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
 }
 
-header {
+/* Header */
+#header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 20px 0;
 }
 
-header img {
+#header img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
 .header-content {
-    flex-grow: 1;
     margin-left: 20px;
 }
 
-h1 {
-    margin-bottom: 10px;
+.header-content h1 {
+    margin-bottom: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0; /* Ajout */
-}
-
-nav ul li {
-    display: inline;
+/* Navigation */
+.navbar-nav .nav-item {
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Ajout pour le menu Bootstrap */
-.navbar-toggler {
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 24px;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    outline: none;
-}
-
-.navbar-nav {
-    flex-direction: row; /* Affichage horizontal sur grand écran */
-}
-
-.navbar-collapse {
-    flex-basis: 100%;
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Titres de sections */
-h2 {
-    font-size: 24px;
+/* Sections */
+.section-title {
+    margin-bottom: 30px;
     color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    font-size: 32px;
 }
 
-/* Listes */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li::before {
-    display: inline-block;
-    content: '';
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
-/* Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Justification du texte dans les sections */
 section {
-    animation: fadeInUp 1s ease-out;
+    text-align: justify;
 }
 
-/* Styles spécifiques au header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.navbar-toggler {
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 24px;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    outline: none;
-}
-
-/* Fond responsive avec le contenu */
-body {
-    background-color: #f4f4f4;
-    padding-top: 70px; /* Ajustez la hauteur du header ici */
-    padding-bottom: 50px; /* Ajustez la hauteur du footer ici */
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
+/* Footer */
+#footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
+#footer p {
+    margin-bottom: 0;
+}
+
+#footer .credits a {
+    color: #fff;
+}
+
+#footer .credits a:hover {
+    color: #f39c12;
+}
